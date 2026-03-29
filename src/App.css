@@ -43,6 +43,39 @@ h1 {
   object-fit: contain;
 }
 
+.server-btn {
+  margin-top: 20px;
+  padding: 12px 40px;
+  font-size: 1rem;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.server-btn.waking {
+  border-color: #f59e0b;
+  color: #f59e0b;
+  cursor: wait;
+}
+
+.server-btn.online {
+  border-color: #2e7d32;
+  color: #2e7d32;
+  cursor: default;
+}
+
+.server-btn.error {
+  border-color: #c62828;
+  color: #c62828;
+}
+
+.server-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .classify-btn {
   margin-top: 20px;
   padding: 12px 40px;
